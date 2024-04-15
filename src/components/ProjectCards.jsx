@@ -28,7 +28,7 @@ const ProjectCards = (props) => {
 
     return (
         <>
-            <div className='w-full md:w-1/2 lg:w-1/3 xl:w-1/3 mb-5 p-3'>
+            <div className='w-full md:w-1/2 lg:w-1/3 xl:w-1/4 mb-5 p-3'>
                 <div
                     data-aos="fade-up"
                     data-aos-delay="100"
@@ -81,7 +81,7 @@ const ProjectCards = (props) => {
                                 />
                             </SwiperSlide>
                         </Swiper>
-                        <p className="m-[5px] text-white text-center text-xl">{props.title}</p>
+                        <p className="m-2 text-white text-center text-lg">{props.title}</p>
                     </div>
                 </div>
             </div>

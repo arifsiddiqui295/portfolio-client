@@ -27,6 +27,14 @@ const Project = () => {
                 Pro<span className='text-yellow-400'>Jects</span>
             </h1>
             <div className='flex flex-wrap justify-center items-center gap-10'>
+            <ProjectCards
+                    title="AI Image Generator & Sharing Application"
+                    image={visual_ai}
+                    image2={visual_ai2}
+                    image3={visual_ai3}
+                    github="https://github.com/arifsiddiqui295/VisualizeAI-Client"
+                    live="https://astounding-torrone-6a753e.netlify.app/"
+                />
                 <ProjectCards
                     title="Real-time Chat Application"
                     image={chat_buzz}
@@ -34,14 +42,6 @@ const Project = () => {
                     image3={chat_buzz3}
                     github="https://github.com/arifsiddiqui295/chat_buzz"
                     live="https://chatbuzz-production.up.railway.app/"
-                />
-                  <ProjectCards
-                    title="AI Image Generator & Sharing Application"
-                    image={visual_ai}
-                    image2={visual_ai2}
-                    image3={visual_ai3}
-                    github="https://github.com/arifsiddiqui295/VisualizeAI-Client"
-                    live="https://astounding-torrone-6a753e.netlify.app/"
                 />
                 <ProjectCards
                     title="Typing Verse"

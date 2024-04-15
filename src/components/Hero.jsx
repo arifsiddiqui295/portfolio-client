@@ -3,7 +3,14 @@ import banner from '../images/banner.jpg'
 import u1 from '../images/u1.jpg'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import TextEffect from './TextEffect'
+import resume from '../resume/Arifuddin Siddiqui.pdf'
 const Hero = () => {
+  const openResumeInNewTab = () => {
+    console.log(resume)
+    window.open(resume, '_blank');
+};
+
+
   return (
     <div
     id='hero'
@@ -29,7 +36,9 @@ const Hero = () => {
             <button
               className='px-[2rem] hover:bg-yellow-400 transition-all duration-200 py-[1rem] text-[18px] font-bold uppercase bg-[#55e6a5] text-black flex items-center space-x-2'
             >
-              <p>View Resume</p>
+              <p
+              onClick={openResumeInNewTab}
+              >View Resume</p>
               <ArrowForwardIcon />
             </button>
 
