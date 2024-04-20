@@ -9,7 +9,14 @@ const Hero = () => {
     console.log(resume)
     window.open(resume, '_blank');
 };
-
+const downloadResume = () => {
+  const link = document.createElement("a");
+  link.href = resume;
+  link.download = resume;
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
 
   return (
     <div
@@ -37,7 +44,7 @@ const Hero = () => {
               className='px-[2rem] hover:bg-yellow-400 transition-all duration-200 py-[1rem] text-[18px] font-bold uppercase bg-[#55e6a5] text-black flex items-center space-x-2'
             >
               <p
-              onClick={openResumeInNewTab}
+              onClick={downloadResume}
               >View Resume</p>
               <ArrowForwardIcon />
             </button>
