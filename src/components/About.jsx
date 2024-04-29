@@ -33,9 +33,7 @@ const About = () => {
                     <button
                         className=' text-center px-[2rem] hover:bg-yellow-400 transition-all duration-200 py-[1rem] text-[18px] font-bold uppercase bg-[#55e6a5] text-black flex items-center space-x-2'
                     >
-                        <p
-                            onClick={downloadResume}
-                        >View Resume</p>
+                        <a target={'_blank'} href="https://drive.google.com/file/d/1W_PRGO3IX2fK_lamo3jsmzQ8nNO-5DKs/view?usp=sharing">View Resume</a>
                         <ArrowForwardIcon />
                     </button>
                 </div>
